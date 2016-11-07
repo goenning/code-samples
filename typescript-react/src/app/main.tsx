@@ -6,6 +6,6 @@ import LimitedLengthTextBox from './LimitedLengthTextBox';
 import '../index.html';
 
 ReactDOM.render(
-  <LimitedLengthTextBox showCounter={true} length={140} />,
+  <LimitedLengthTextBox showCounter={true} length={20} />,
   document.getElementById('app')
 );

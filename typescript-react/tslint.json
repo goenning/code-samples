@@ -12,6 +12,10 @@
         true, "single", "jsx-double"
       ],
       "jsx-no-lambda": false,
+      "max-line-length": [
+        false
+      ],
+      "curly": false,
       "jsx-self-close": false,
       "ordered-imports": false,
       "object-literal-sort-keys": false,
