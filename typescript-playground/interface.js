@@ -1,4 +1,4 @@
-const got = {
+var got = {
     title: 'A Game of Thrones',
     pages: 694,
     authors: {

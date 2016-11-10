@@ -3,5 +3,5 @@ function countChars(text) {
 }
 countChars(2016);
 countChars("2016");
-countChars([1, 2, 3]);
-countChars(new Date());
+//countChars([ 1, 2, 3]);
+///countChars(new Date());

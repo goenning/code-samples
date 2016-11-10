@@ -21,7 +21,14 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.tsx?$/, loader: "ts-loader" },
-            { test: /\.html$/, loader: 'file?name=[name].[ext]' }
+            { test: /\.min\.css$/, loaders: ['style', 'css'] },
+            { test: /\.html$/, loader: 'file?name=[name].[ext]' },
+			{ test: /\.(png|jpg)$/, loader: 'file?name=public/images/[name].[hash].[ext]' },
+			{ test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=public/fonts/[name].[hash].[ext]&mimetype=application/font-woff'},
+			{ test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,loader: 'file?name=public/fonts/[name].[hash].[ext]&mimetype=application/font-woff'},
+			{ test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=public/fonts/[name].[hash].[ext]&mimetype=application/octet-stream'},
+			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=public/fonts/[name].[hash].[ext]'},
+			{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=public/images/[name].[hash].[ext]&mimetype=image/svg+xml' }
         ],
         preLoaders: [
             { test: /\.js$/, loader: "source-map-loader" }

@@ -3,5 +3,5 @@ function multiply(num1: number, num2: number) {
 }
 
 console.log(multiply(4, 5)); //20
-console.log(multiply("Jon Snow", 10)); //???  
+//console.log(multiply("Jon Snow", 10)); //???  
 
