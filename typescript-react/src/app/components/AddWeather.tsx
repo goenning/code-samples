@@ -26,12 +26,11 @@ export default class AddWeather extends React.Component<Props, State> {
     this.setState({ text: e.currentTarget.value });
   }
 
-  private onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    getWeather(this.state.text).then((weather) => {
-      this.props.onNewWeather(weather);
-      this.setState({ text: '' });
-    });
+  private async onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const weather = await getWeather(this.state.text);
+    this.props.onNewWeather(weather);
+    this.setState({ text: '' });
   }
 
   public render() {
