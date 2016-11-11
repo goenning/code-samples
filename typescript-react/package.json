@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "@types/axios": "^0.9.33",
-    "@types/es6-shim": "^0.31.32",
     "@types/react": "^0.14.44",
     "@types/react-dom": "^0.14.18",
     "css-loader": "^0.25.0",
@@ -24,7 +23,7 @@
     "ts-loader": "^1.0.0",
     "tslint": "^3.15.1",
     "tslint-react": "^1.1.0",
-    "typescript": "^2.0.7",
+    "typescript": "rc",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }

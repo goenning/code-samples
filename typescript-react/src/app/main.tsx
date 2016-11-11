@@ -9,6 +9,6 @@ import 'semantic-ui/dist/semantic.min.css';
 
 
 ReactDOM.render(
-  <LimitedLengthTextBox length={20} showCounter={true} />,
+  <Root />,
   document.getElementById('app')
 );
