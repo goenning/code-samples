@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import LimitedLengthTextBox from './LimitedLengthTextBox';
 import Root from './Root';
 
 import '../index.html';
